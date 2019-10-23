@@ -11,6 +11,6 @@ public class UserControl {
        修改了用户名称
    */
     public void changeName(){
-        System.out.println("修改了一个用户名称");
+        System.out.print("修改了一个用户名称");
     }
 }
