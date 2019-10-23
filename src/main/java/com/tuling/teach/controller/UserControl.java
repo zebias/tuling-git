@@ -8,9 +8,9 @@ public class UserControl {
         System.out.println("查看到了一个用户");
     }
    /*
-       修改了用户名称
+       删除了一个用户名称
    */
-    public void changeName(){
-        System.out.print("修改了一个用户名称");
+    public void delName(){
+        System.out.print("删除了一个用户名称");
     }
 }
