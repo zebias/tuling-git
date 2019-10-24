@@ -11,6 +11,7 @@ public class UserControl {
        删除了一个用户名称
    */
     public void delName(){
+        // 修改这个del功能
         System.out.print("删除了一个用户名称");
     }
 }
