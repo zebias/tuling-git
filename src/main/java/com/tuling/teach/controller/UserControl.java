@@ -29,7 +29,7 @@ public class UserControl {
     @RequestMapping("/")
     @ResponseBody
     public String show(){
-        return "this is web page but create at jenkins tools";
+        return "this is web page but create at jenkins tools by master branch";
     }
     /*
         getSHA1
