@@ -29,12 +29,12 @@ public class UserControl {
     @RequestMapping("/")
     @ResponseBody
     public String show(){
-        return "this is web page";
+        return "this is web page but create at jenkins tools";
     }
     /*
         getSHA1
      */
-    private String getSHA1(String ticket, String timestamp, String noncestr, String url){
+    private static String getSHA1(String ticket, String timestamp, String noncestr, String url){
         // 拼接字符串
         String str= "ticket="+ticket+"&noncestr="+
         noncestr+"&timestamp="+
@@ -71,5 +71,11 @@ public class UserControl {
             e.printStackTrace();
         }
         return null;
+    }
+
+    public static void main(String[] args) {
+        // ticket=FEashrXpKasl7Fvr&noncestr=wyetd7293jfue8di39ei8djeuf738423&timestamp=1571966374&url=http://106.15.120.35:9990/h5
+        String sha1 = getSHA1("FEashrXpKasl7Fvr", "1571966374", "wyetd7293jfue8di39ei8djeuf738423", "http://106.15.120.35:9990/h5");
+        System.out.println(sha1);
     }
 }
